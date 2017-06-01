@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SiteWithAdm</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <!--Pulling Awesome Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-5 col-md-3">
+                <%= form_tag(controller: "devise/sessions", action: "create", method: "post", class: "new_user form-login") do %>
+                    
+                <!--<form class="new_admin" id="new_admin" action="/admins/sign_in" accept-charset="UTF-8" method="post" class="form-login">-->
+                    <input name="utf8" type="hidden" value="✓">
+                    <h4>Welcome back.</h4>
+                    <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" class="form-control input-sm chat-input" placeholder="email">
+                    </br>
+                    <input autocomplete="off" type="password" name="user[password]" id="user_password" class="form-control input-sm chat-input" placeholder="password">
+                    </br>
+                    <div class="wrapper">
+                        <span class="group-btn">    
+                            <input type="submit" name="commit" value="login" class="btn btn-primary btn-md">
+                        </span>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  notice: MyString
+  lote: one
+  user: one
+  license_plate: MyString
+  province: MyString
+  make: MyString
+  model: MyString
+  box_infraction_type: 1
+  details_infraction: MyString
+
+two:
+  notice: MyString
+  lote: two
+  user: two
+  license_plate: MyString
+  province: MyString
+  make: MyString
+  model: MyString
+  box_infraction_type: 1
+  details_infraction: MyString
