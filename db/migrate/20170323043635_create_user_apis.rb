@@ -1,4 +1,4 @@
-class CreateUserApis < ActiveRecord::Migration[5.0]
+class CreateUserApis < ActiveRecord::Migration[5.1]
   def change
     create_table :user_apis do |t|
       t.references :user, foreign_key: true

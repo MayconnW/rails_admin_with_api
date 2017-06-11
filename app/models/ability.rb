@@ -7,10 +7,10 @@ class Ability
     if user.role.name == 'admin'
       can :manage, :all
       can :access, :rails_admin
-      can :dashboard      
+      can :manage, :all    
     elsif user.role.name == 'user'
       can :access, :rails_admin
-      can :dashboard
+      can :dashboard, :all
       can :manage, User, :id => user.id
       cannot :destroy, User
       cannot :create, User
